@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Simple Calculator</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+      
+        <div class="container">
+        <div class="row">
+        <div class="col-xs-offset-3 col-md-4 col-xs-6 col-sm-6">  
+            <h4>Simple Calculator</h4>
+                <div class="margin:0px;">     
+                    <textarea id="input" class="display form-control" cols="28" rows="2" style="font-size:25px;background-color: rgb(210, 245, 255);"></textarea>
+                        <table>
+                            <tr>
+                                <td><input   class="button btn  btn-danger" type="button" onclick="clr()" value="C"></td>
+                                <td><input   class="button btn  btn-warning" type="button" onclick="back()" value="<"></td>
+                                <td><input   class="button btn  btn-info" type="button" onclick="insert('/')" value="/"></td>
+                                <td><input   class="button btn  btn-info" type="button" onclick="insert('*')" value="x"></td>
+                            </tr>
+                            
+                            <tr>
+                                    <td><input   class="button btn  btn-primary" type="button" onclick="insert(7)" value="7"></td>
+                                    <td><input   class="button btn  btn-primary" type="button" onclick="insert(8)" value="8"></td>
+                                    <td><input   class="button btn  btn-primary" type="button" onclick="insert(9)" value="9"></td>
+                                    <td><input   class="button btn  btn-info" type="button" onclick="insert('-')" value="-"></td>
+                                </tr>
+                                <tr>
+                                    <td><input   class="button btn  btn-primary" type="button" onclick="insert(4)" value="4"></td>
+                                    <td><input   class="button btn  btn-primary" type="button" onclick="insert(5)" value="5"></td>
+                                    <td><input   class="button btn  btn-primary" type="button" onclick="insert(6)" value="6"></td>
+                                    <td><input   class="button btn  btn-info" type="button" onclick="insert('+')" value="+"></td>
+                                </tr>
+                                <tr>
+                                    <td><input   class="button btn  btn-primary" type="button" onclick="insert(1)" value="1"></td>
+                                    <td><input   class="button btn  btn-primary" type="button" onclick="insert(2)" value="2"></td>
+                                    <td><input   class="button btn  btn-primary" type="button" onclick="insert(3)" value="3"></td>
+                                    <td rowspan="2"><input class="button btn  btn-success" type="button" onclick="result()"style="height:110px" value="="></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><input class="button btn  btn-primary" type="button" onclick="insert(0)" value="0" style="width:110px"></td>
+                                    <td><input class="button btn  btn-primary" type="button" onclick="insert('.')" value="." ></td>
+                                </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
